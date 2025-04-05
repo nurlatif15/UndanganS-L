@@ -1,0 +1,410 @@
+@font-face {
+    font-family: 'Head';
+    src: url('../font/texgyreadventor-regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Latin';
+    src: url('../font/GreatVibes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/UndanganCont/assetcont/img/bg\ cont.svg"); /* ganti sesuai nama file kamu */
+    background-repeat: repeat-y;
+    background-position: center top;  /* posisi tengah secara horizontal */
+    background-size: auto;            /* biar ukuran asli gambar dipakai */
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@media (max-width: 768px) {
+    body {
+        background-image: url('/UndanganCont/assetcont/img/bg\ cont.svg');
+        background-repeat: repeat-y;
+        background-position: center top;
+        background-size: auto;
+    }
+}
+button{
+    border: none;
+    color: none;
+}
+.invitation-container {
+    width: 90%;
+    max-width: 375px; /* Batas maksimal untuk mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.invitation-section {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.Qs {
+    color: #5a3e36;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: "Head";
+}
+.Arti {
+    color: #241917;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: "Head";
+    margin-bottom: 24px;
+}
+
+.KeduaMempelai{
+    color: #5a3e36;
+    font-weight: 400;
+    font-size: 48px;
+    font-family: "Latin"; /* pilih font saja  */
+
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+    margin: 10px 0px 20px 0px;
+}
+.card img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.name {
+    font-family: "Head";
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.parents {
+    font-family: "Head";
+    font-size: 14px;
+    color: #555;
+    padding: 5px;
+}
+@media (max-width: 380px) {
+    body {
+        padding: 5px;
+    }
+    .card {
+        width: 90%;
+        padding: 15px;
+    }
+}
+.Akad {
+    font-weight: 400;
+    font-size: 48px;
+    font-family: "Latin";
+    margin-bottom: 50px;
+    
+}
+.barakad { 
+
+    background-color: #fff;  /* Menyesuaikan gambar agar memenuhi elemen */
+    background-position: center; /* Posisi gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah gambar berulang */
+    padding: 20px; /* Beri jarak agar teks lebih jelas */
+    text-align: center; /* Tengahin teks */
+    border-radius: 200px 200px 0 0;
+    margin-top: 50px;
+
+}
+.texthitungmundur{
+    font-family: "Head";
+    margin-bottom: 40px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 363px) {
+    .invitation-container {
+        padding: 15px;
+    }
+    .barakad { 
+        background-size: cover;  /* Menyesuaikan gambar agar memenuhi elemen */
+        background-position: center; /* Posisi gambar di tengah */
+        background-repeat: no-repeat; /* Mencegah gambar berulang */
+        padding: 10px; /* Beri jarak agar teks lebih jelas */
+        text-align: center; /* Tengahin teks */
+    }
+    .logo {
+        width: 70px;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+    .KeduaMempelai{
+        font-size: 38px;
+    }
+}
+/* Hitun mundur */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.countdown-box {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #dadada;
+    font-size: 20px;
+    font-weight: bold;
+    width: 30px;
+    text-align: center;
+    font-family: "Head";
+}
+.label {
+    font-size: 12px;
+    color: #131111;
+}
+
+@media (max-width: 720px) {
+    .countdown-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .countdown-box {
+        width: 30px;
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    .countdown-box {
+        width: 30px;
+        padding: 8px;
+        font-size: 16px;
+        margin-bottom: 100px;
+    }
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px; /* Ukuran default */
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+/* Untuk perangkat mobile dengan lebar kurang dari 768px */
+@media (max-width: 768px) {
+    .map-container iframe {
+        width: 90%; /* Ukuran lebih kecil */
+        height: 200px; /* Kurangi tinggi */
+        display: block;
+        margin: 0 auto; /* Tengah */
+    }
+}
+    .tempatacara{
+        font-family: "Head";
+    }
+    .tempat-acara-1 {
+        margin-top: -30px;
+        font-family: "Head";
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+    .ceklokasi img{
+        width: 180px;
+    }
+    .ceklokasi{
+        border: none; /* Menghapus border */
+        outline: none; /* Menghapus outline saat klik */
+        box-shadow: none; /* Menghapus bayangan */
+        margin-top: 50px;
+
+
+    }
+
+    /* reservasi */
+/* Memperlebar kontainer */
+.container {
+    max-width: 600px; /* Lebar diperbesar */
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Menyesuaikan input, select, dan textarea agar lebar penuh */
+input, select, textarea {
+    width: calc(100% - 20px); /* Lebar lebih besar dan proporsional */
+    padding: 12px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Menghindari elemen melewati lebar kontainer */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+.kirim{
+    width: 100px; /* Atur ukuran sesuai kebutuhan */
+    height: auto; /* Biarkan proporsi tetap terjaga */   
+}
+/* kado */
+.card-1 {
+    width: 320px;
+    height: 180px;
+    background: linear-gradient(135deg, #fff1f1, #f59e9e);
+    color: rgb(24, 24, 24);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin-bottom: 50px;
+}
+.bank-logo {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.info {
+    font-family: "Head";
+    margin-top: 20px;
+    text-align: left;
+}
+.label {
+    font-size: 12px;
+    opacity: 0.8;
+}
+.account-number {
+    font-size: 18px;
+    font-weight: bold;
+}
+.owner-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+.actions {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    display: flex;
+    gap: 10px;
+}
+.small-img {
+    width: 80px; /* Atur ukuran sesuai kebutuhan */
+    height: auto; /* Biarkan proporsi tetap terjaga */
+}
+.btn-tf{
+    width: 80px; /* Atur ukuran sesuai kebutuhan */
+    height: auto; /* Biarkan proporsi tetap terjaga */
+}
+.Bank{
+    width: 80px; /* Atur ukuran sesuai kebutuhan */
+    height: auto; /* Biarkan proporsi tetap terjaga */
+}
+/* * Animasi Fade In dari Bawah ke Atas */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Terapkan animasi ke semua elemen utama */
+.invitation-container, .card, .Akad, .barakad, .section, .map-container, .container, .Wedding, .card-1 {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Tambahkan delay agar efek masuk lebih menarik */
+.card:nth-child(1) { animation-delay: 0.2s; }
+.Akad { animation-delay: 0.4s; }
+.card:nth-child(2) { animation-delay: 0.6s; }
+.barakad { animation-delay: 0.8s; }
+.section { animation-delay: 1s; }
+.map-container { animation-delay: 1.2s; }
+.container { animation-delay: 1.4s; }
+.Wedding { animation-delay: 1.6s; }
+.card-1 { animation-delay: 1.8s; }
+
+/* Animasi loading untuk tombol kirim */
+button.loading {
+    position: relative;
+    pointer-events: none;
+}
+
+button.loading::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    border-top-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    animation: spin 1s linear infinite;
+}
+
+/* Animasi berputar */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Saat tombol loading, sembunyikan gambar kirim */
+button.loading img {
+    visibility: hidden;
+}
+

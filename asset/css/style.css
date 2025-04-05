@@ -1,0 +1,98 @@
+/* Atur background agar full screen dan responsive */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/bgcover1.svg'); /* ganti dengan path sesuai gambar background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Buat wrapper fleksibel */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Gambar undangan di tengah dan responsif */
+.center-image {
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+.Kepada {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgb(44, 44, 44);
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: "Nunito Sans";
+}
+#namaTamu{
+    position: absolute;
+    bottom: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgb(44, 44, 44);
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: "Nunito Sans"; 
+}
+
+.buka-undangan {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.buka-undangan img {
+    width: 200px; /* Ubah ukuran sesuai kebutuhan */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.buka-undangan img:hover {
+    transform: scale(1.05);
+}
+.sofi-latif {
+    justify-content: center;
+    align-items: center;
+    margin-right: 50%;
+  }
+  
+  .sofi-latif img {
+    width: 200%;
+    display: flex;
+  }
+  @media (max-width: 375px){
+    .buka-undangan img {
+        width: 200px; /* Ubah ukuran sesuai kebutuhan */
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+    
+    .buka-undangan img:hover {
+        transform: scale(1.05);
+    }
+  }
